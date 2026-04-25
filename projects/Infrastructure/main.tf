@@ -16,6 +16,8 @@ module "eks" {
   node_group_name  = var.node_group_name
 
   instance_types = var.instance_types
+  capacity_type  = var.capacity_type
+  disk_size      = var.disk_size
   min_size       = var.min_size
   desired_size   = var.desired_size
   max_size       = var.max_size
